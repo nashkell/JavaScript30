@@ -1,3 +1,5 @@
+![](https://javascript30.com/images/JS3-social-share.png)
+
 # JavaScript30 - 30 Day JavaScript Challenge
 
 Nitish Dayal, Software & Applications Developer  
