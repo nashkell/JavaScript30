@@ -71,16 +71,18 @@ function playSound(e) {
     /*[data-key=65] targets specific data attribute, but we can use ES6 standard ${e.keyCode} to target 'event' variable passed into function 
     make sure that data-key value is in " "
     */
-    if (!audio) return;//stop the function
-    audio.currentTime = 0; //rewind to the start - allows continuous pressing
+    if (!audio) return;//stops the function
+    audio.currentTime = 0; //rewind audio to the start - allows continuous pressing of key
     audio.play();
-    key.classList.toggle('playing');
-    //create a transition end event
+    key.classList.toggle('playing');//playing class is what toggles the 'highlight' on and off
+    
 }
+
 function removeTransition(e) {
   if (e.propertyName !== 'transform') return;//skip if its not a transform
   this.classList.remove('playing');
 }
+
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 //listen for 'keydown' event in window
