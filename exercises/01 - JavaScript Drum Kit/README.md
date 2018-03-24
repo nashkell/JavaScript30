@@ -2,7 +2,7 @@
 
 # JavaScript Drum Kit
 
-Completed: March 21, 2018
+> Completed: March 21, 2018
 
 We are given an HTML page that displays a series of `div` elements, each with a letter inside that corresponds with a key on the keyboard and the name of a soundclip that is to be played when the key is pressed. 
 
