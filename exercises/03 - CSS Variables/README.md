@@ -76,7 +76,7 @@ document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix
 
 My final output including comments 
 
-[**Live Demo**](http://buddyharrisdesign.com/JavaScript30/exercises/02%20-%20JS%20and%20CSS%20Clock/index.html)
+[**Live Demo**](http://buddyharrisdesign.com/JavaScript30/exercises/03%20-%20CSS%20Variables/index.html)
 
 ```css
 /*declare variables on an element; use root to target a high level element similar to html element*/
