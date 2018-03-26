@@ -29,8 +29,8 @@ and objects will help a great deal in working through the challenges. As of writ
 *Links will be updated as I complete the challenges*
 
 1.  [JavaScript Drum Kit](/exercises/01%20-%20JavaScript%20Drum%20Kit)
-2.  *[JS + CSS Clock]*(/exercises/02%20-%20JS%20%2B%20CSS%20Clock)
-3.  *[CSS Variables]*<!-- (/exercises/03%20-%20CSS%20Variables) -->
+2.  [JS + CSS Clock](/exercises/02%20-%20JS%20%2B%20CSS%20Clock)
+3.  [CSS Variables](/exercises/03%20-%20CSS%20Variables)
 4.  *[Array Cardio, Day 1]*<!-- (/exercises/04%20-%20Array%20Cardio%20Day%201/) -->
 5.  *[Flex Panel Gallery]*<!-- (/exercises/05%20-%20Flex%20Panel%20Gallery/) -->
 6.  *[Type Ahead]*<!-- (/exercises/06%20-%20Type%20Ahead/) -->
