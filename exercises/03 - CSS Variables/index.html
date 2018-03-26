@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+</head>
+<body>
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#ffc600">
+  </div>
+
+  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+
+  <style>
+    /*declare variables on an element; use root to target a high level element similar to html element*/
+
+    /* Two hyphens (--) followed by variable name*/
+    :root {
+      --base: #ffc600;
+      --spacing: 10px;
+      --blur: 10px;
+    }
+
+    img {
+      /* Use the CSS variable as value of the property and pass your predefined variable into the '()'*/
+
+      /* 'var(--variableName)' to use previously defined CSS properties*/
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+    .hl {
+      color: var(--base);
+    }
+    /*
+      misc styles, nothing to do with CSS variables
+    */
+
+    body {
+      text-align: center;
+      background: #193549;
+      color: white;
+      font-family: 'helvetica neue', sans-serif;
+      font-weight: 100;
+      font-size: 45px;
+    }
+
+    .controls {
+      margin-bottom: 50px;
+    }
+
+    input {
+      width:100px;
+    }
+  </style>
+
+  <script>
+    const inputs = document.querySelectorAll('.controls input');
+    // querySelectorAll it provides a NodeList not array to reference
+
+    function handleUpdate() {
+      //console.log(this.value); //gets value from input to apply to css variable
+      //console.log(this.dataset); //data set is an object that contains all data attributes from that specific element
+
+      const suffix = this.dataset.sizing || ''; //must have or '' (i.e. nothing) otherwise it will return undefined for base color
+
+      //select entire document (root) and set the property of base/spacing/blur 
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+      //`--${this.name}` grabs the name of the element changing and then 'this.value' applies the value to the element
+      //plus 'suffix is what adds the 'px' as needed to the property
+
+    }
+
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));//listening for change event on input and call function
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));//listen for mouse movement even on input and call function
+  </script>
+
+</body>
+</html>
