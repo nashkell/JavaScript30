@@ -2,7 +2,7 @@
 
 # Array Cardio
 
-Completed: March 24, 2018
+Completed: March 25-26, 2018
 
 Wes prompts us to take two arrays and practice solving a few conditions via performing the necessary operations via array methods. Very straight forward and definitely takes you back to the basics.
 
@@ -29,7 +29,7 @@ tables, ternary operators, a new way of looping, arrow functions
 
 1. Array Methods
 
-####array.filter
+#### array.filter
 
 ```javascript
   const fifteen = inventors.filter(function(inventor) {
@@ -52,7 +52,7 @@ Wes was awesome is showing how we can even make this a more efficient operation 
 In this case the output is `true` or `false` (i.e. boolean) and because of this we can use an arrow function to test when that index of the array matches our supplied criteria. In turn we now no longer need the if statement.
 
 
-####array.map
+#### array.map
 
 Maps act like a factory machine that takes a raw material, stamps it and then kicks out the item on the other end; **map will always return the same amount of items you give it**.
 
@@ -69,7 +69,7 @@ He also referenced something he showed us in the previous challenges where we us
 ```
 
 
-####array.sort
+#### array.sort
 
 Sort is very plain in its execution. When you sort an array, the `sort` relies on a comparative function to be set as a parameter. This `compareFunction` defines the sort order of what is returned. The original array is sorted in place.
 
@@ -94,7 +94,7 @@ Wes introduced ternary operators for simplifying the if statement
 Using an arrow function we set the parameter compare function to `a, b` then the "if" condition placed followed by `?` then the return if true and `:` then the return if false.
 
 
-####array.reduce
+#### array.reduce
 
 //reduce is a cleaner way of doing a for loop 
 
