@@ -1,6 +1,6 @@
 ![](http://buddyharrisdesign.com/JavaScript30/exercises/06%20-%20Type%20Ahead/typeAhead.png)
 
-# Update CSS Variables with JS
+# Type Ahead AJAX
 
 Completed: April 1st, 2018
 
