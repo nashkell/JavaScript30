@@ -2,7 +2,7 @@
 
 # Flex Panels Image Gallery
 
-Completed: March 27, 2018
+Completed: March 30, 2018
 
 We are given a web page with five `div` HTML elements; identified by class of `.panels` which is wrapped inside a container with the class of `.panel`. Each `div` contains three `p` elements. The initial state has the five `div` stacked with the type inside and visible.
 
@@ -129,7 +129,7 @@ What we are doing is listening for a click on each panel, when someone clicks we
 
 My final output including comments 
 
-[**Live Demo**](http://buddyharrisdesign.com/JavaScript30/exercises/exercises/05%20-%20Flex%20Panel%20Gallery/index.html)
+[**Live Demo**](http://buddyharrisdesign.com/JavaScript30/exercises/05%20-%20Flex%20Panel%20Gallery/index.html)
 
 
 ```css
