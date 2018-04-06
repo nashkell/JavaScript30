@@ -22,7 +22,7 @@ Array Methods, the gateway drug to functional programming
 - [Array.prototype.findIndex()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
 
 
-1. Array Methods
+**Array Methods**
 
 #### array.prototype.some()
 
