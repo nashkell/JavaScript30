@@ -1,6 +1,6 @@
 ![](http://buddyharrisdesign.com/JavaScript30/exercises/07%20-%20Array%20Cardio%20Day%202/arrayCardio.png)
 
-# Array Cardio
+# Array Cardio Day 2
 
 Completed: April 3, 2018
 
