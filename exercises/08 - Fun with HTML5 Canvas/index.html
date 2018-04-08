@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+<body>
+<canvas id="draw" width="800" height="800"></canvas>
+<script>
+//learn about the fundamentals of canvas
+
+//first we need to grab the canvas
+const canvas = document.querySelector('#draw');
+
+//second we need what is called a context canvas on the web is sort of like microsoft paint where you get a block of actual pixels and then you draw on that. On the web you draw on the canvas
+
+const ctx = canvas.getContext('2d');//build the context that we draw on can be `2d` or `3d`
+
+//set height and width of the canvas
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+//base settings
+ctx.strokeStyle = '#BADA55';//when you draw on something it needs to be a color and define if the end of the line should be squared off or round
+ctx.lineJoin = 'round';
+ctx.lineCap = 'round';
+ctx.lineWidth = 100;
+ctx.globalCompositeOperation = 'multipy'; //like photoshop where it blends the colors as you draw
+
+let isDrawing = false;//when we click down sets to true; flag to tell the app if we should draw to the canvas
+
+let lastX = 0; //where do you start and end the line
+let lastY = 0;
+let hue = 0;
+let direction = true;
+
+function draw(e) {
+	if(!isDrawing) return; //this still stop the fn from running when they are not moused down
+	console.log(e);
+	ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`; //100% saturation, 50% lightness
+	ctx.beginPath();
+	//start from
+	ctx.moveTo(lastX, lastY);
+	//go to
+	ctx.lineTo(e.offsetX, e.offsetY);
+	ctx.stroke();
+	//lastX = e.offsetX;
+	//lastY = e.offsetY;
+
+	[lastX, lastY] = [e.offsetX, e.offsetY];//destructuring an array
+
+	hue++;
+	if (hue >= 360) {
+		hue = 0;
+	}
+	if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+		direction = !direction;
+	}
+	if (direction) {
+		ctx.lineWidth++;
+	} else {
+		ctx.lineWidth--;
+	}
+}
+
+canvas.addEventListener('mousedown', (e) => {
+	isDrawing = true;
+	[lastX, lastY] = [e.offsetX, e.offsetY];
+});
+
+//canvas.addEventListener('mousemove', draw); //when I move my mouse 
+canvas.addEventListener('mousemove', draw);
+
+canvas.addEventListener('mouseup', () => isDrawing = false);
+canvas.addEventListener('mouseout', () => isDrawing = false);
+
+//mother-effinghsl
+
+</script>
+
+</canvas>
+<style>
+  html, body {
+    margin:0;
+  }
+</style>
+
+</body>
+</html>
