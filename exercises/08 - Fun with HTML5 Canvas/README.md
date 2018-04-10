@@ -99,7 +99,7 @@ canvas.addEventListener('mouseout', () => isDrawing = false);
 
 My final output including comments 
 
-[**Live Demo**](http://buddyharrisdesign.com/JavaScript30/exercises/08%20-%20Fun%20with%20HTML5%20Canvas/index.html)
+[**Live Demo**](http://buddyharrisdesign.com/JavaScript30/exercises/08%20-%20Fun%20with%20HTML5%20Canvas /index.html)
 
 
 ```javascript
