@@ -127,7 +127,7 @@ fullScreenBtn.addEventListener('click', toggleFullScreen);
 
 ## Running the Script
 
-![](http://buddyharrisdesign.com/JavaScript30/exercises/11%20-%20Custom%20Video%20Player/checkboxes.png)
+![](http://buddyharrisdesign.com/JavaScript30/exercises/11%20-%20Custom%20Video%20Player/video2.png)
 
 My final output including comments 
 

@@ -38,7 +38,7 @@ and objects will help a great deal in working through the challenges. As of writ
 8.  [Fun with HTML5 Canvas](/exercises/08%20-%20Fun%20with%20HTML5%20Canvas/)
 9.  [Dev Tools Domination](/exercises/09%20-%20DevTools%20Domination/)
 10. [Hold Shift and Check Checkboxes](/exercises/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/)
-11. *[Custom Video Player]*<!-- (/exercises/11%20-%20Custom%20Video%20Player/) -->
+11. [Custom Video Player](/exercises/11%20-%20Custom%20Video%20Player/)
 12. *[Key Sequence Detection]*<!-- (/exercises/12%20-%20Key%20Sequence%20Detection/) -->
 13. *[Slide in on Scroll]*<!-- (/exercises/13%20-%20Slide%20in%20on%20Scroll/) -->
 14. *[JavaScript References vs. Copying]*<!-- (/exercises/14%20-%20JavaScript%20References%20VS%20Copying) -->
