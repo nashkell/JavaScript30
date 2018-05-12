@@ -18,7 +18,7 @@ const secretCode = 'buddy';
 window.addEventListener('keyup', (e) => {
 	console.log(e.key);
 	pressed.push(e.key);
-	//splice form the back using a negative number
+	//splice from the back using a negative number
 	//-secretCode.length-1 - gives us the cutoff point for th array, and then pressed.length removes anything after secret code length
 	pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
 
